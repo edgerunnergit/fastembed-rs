@@ -7,6 +7,7 @@ use tokenizers::{AddedToken, PaddingParams, PaddingStrategy, Tokenizer, Truncati
 
 pub const DEFAULT_CACHE_DIR: &str = ".fastembed_cache";
 
+#[derive(Debug)]
 pub struct SparseEmbedding {
     pub indices: Vec<usize>,
     pub values: Vec<f32>,
